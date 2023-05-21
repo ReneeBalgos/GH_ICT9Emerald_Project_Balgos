@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lenght Converter</title>
+	<style>
+		table{
+			border-style:ridge;
+			border-color: #800000;
+			text-align: center;
+			margin: 100px;
+			height: 270px;
+			width: 670px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: auto;
+			border-width: 8px;
+			background-color: #F5F5F4;
+			background-image: url(https://media.istockphoto.com/id/1225432583/photo/abstract-red-brick-wall-panoramic-background.jpg?b=1&s=170667a&w=0&k=20&c=bc39Z4H5e-FAmxXuhNHF-YlwZzui85nLP82RHKfCo5A=);
+		}
+		body{
+			background-image: url(https://media.istockphoto.com/id/1225432583/photo/abstract-red-brick-wall-panoramic-background.jpg?b=1&s=170667a&w=0&k=20&c=bc39Z4H5e-FAmxXuhNHF-YlwZzui85nLP82RHKfCo5A= );
+			background-size: 100%;
+		}
+		h1{
+			text-transform: uppercase;
+			text-align: center;
+			text-decoration: underline;
+		}
+		img{
+			height:400px;
+			width: 1000px;
+			border-radius:10%;
+			border-style: groove;
+			border-color: brown;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<center><h1>Lenght Converter</h1></center>
+<center><table></center>
+<tr>
+	<th style="background-color:#FAC898">
+		<h3>Millimeter to Centimeter</h3>
+		<p>Mm: <input type="text" id="value1" placeholder="millimeter"></p>
+		<input type="submit" value="=" onclick="forDivision1()">
+		<p> Cm: <span id="id1"></span></p>
+	</th>
+
+	<th style="background-color:#AEC6CF">
+		<h3>Millimeter to Meter</h3>
+		<p>Mm: <input type="text" id="value2" placeholder="millimeter"></p>
+		<input type="submit" value="=" onclick="forDivision2()">
+		<p> Meter: <span id="id2"></span></p>
+	</th>
+
+	<th style="background-color:#FAA0A0 ">
+		<h3>Millimeter to Kilometer</h3>
+		<p>Mm: <input type="text" id="value3" placeholder="millimeter"></p>
+		<input type="submit" value="=" onclick="forDivision3()">
+		<p> Km: <span id="id3"></span></p>
+	</th>
+</tr>
+	</table><br>
+		<center><img src=" https://cognota.com/wp-content/uploads/2019/09/blueprint.jpg "></center>	
+	<script>
+	function forDivision1(){
+		var num1 = document.getElementById('value1').value;
+		var num2 = 10; 
+		var quo = num1 / num2;
+		document.getElementById('id1').innerHTML = quo;
+		}
+
+	function forDivision2(){
+		var num1 = document.getElementById('value2').value;
+		var num2 = 1000; 
+		var quo = num1 / num2;
+		document.getElementById('id2').innerHTML = quo;
+		}
+	function forDivision3(){
+		var num1 = document.getElementById('value3').value;
+		var num2 = 1000000; 
+		var quo = num1 / num2;
+		document.getElementById('id3').innerHTML = quo;
+		}
+
+	</script>
+</body>
+</html>
